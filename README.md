@@ -31,4 +31,4 @@ docker-compose up -d
 
 ## Usage
 the backend will be expose on [http://127.0.0.1:8000/api/v1/]
-the frontend app will be expose on [http://localhost:5174/]
+the frontend app will be expose on [http://localhost:5173/
