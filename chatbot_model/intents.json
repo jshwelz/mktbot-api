@@ -1,0 +1,58 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hey",
+                "Hello",
+                "hey",
+                "hi",
+                "hello"
+            ],
+            "responses": [
+                "Welcome to the Demo promotional flow! Are you interested in our coupon promotion?",
+                "Welcome to the Marketing Bot Demo promotional flow! Are you interested in our coupon promotion?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye",
+                "later"
+            ],
+            "responses": [
+                "Bye",
+                "take care"
+            ]
+        },
+        {
+            "tag": "redeem",
+            "patterns": [
+                "yes",
+                "yea",
+                "okay",
+                "sounds good",
+                "Yes, Show me the coupon"
+            ],
+            "responses": [
+                "Here is our unique promotional coupon! 10% off. Limit 1 per customer",
+                "Receive our Unique Promotional coupon! 10% off. Limit one per customer"
+            ]
+        },
+        {
+            "tag": "turndown",
+            "patterns": [
+                "no",
+                "No",
+                "no, Thanks",
+                "No, thanks",
+                "not interested",
+                "hell no"
+            ],
+            "responses": [
+                "No Worries!, have a nice day!",
+                "No Problem!, have a nice day!"
+            ]
+        }
+    ]
+}

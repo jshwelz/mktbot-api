@@ -1,0 +1,23 @@
+services:
+  backend:
+    restart: always
+    container_name: backend
+    command : bash -c "python manage.py migrate &&
+                      python manage.py runserver 0.0.0.0:8000"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    
+  frontend:
+    restart: always
+    command : npm run dev
+    container_name: front    
+    build:
+      context: ./marketing-bot/
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"        
+    depends_on:
+      - backend

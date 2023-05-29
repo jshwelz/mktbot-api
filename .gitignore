@@ -1,0 +1,7 @@
+/marketing-bot/node_modules/
+env/
+.pytest_cache/
+.idea/
+__pycache__/
+node_modules/
+db.sqlite3
